@@ -882,7 +882,7 @@ public class SVM <T> implements OnlineClassifier<T>, SoftClassifier<T> {
          * @param epsgr the tolerance of convergence test.
          */
         void finish(double epsgr) {
-            finish(epsgr, Integer.MAX_VALUE);
+            finish(epsgr, maxIter);
         }
 
         /**
